@@ -10,7 +10,7 @@
 void handler(int num)
 {
     // Print the child and parent then the signal recieved
-    printf("I am child %d of parent %d, and recieved sig %d.\n", getpid(), getppid(), SIGUSR1);
+    printf("I am child %d of parent %d, and recieved sig %d.\n", getpid(), getppid(), num);
     // Exit with code 1
     exit(EXIT_FAILURE);
 }
